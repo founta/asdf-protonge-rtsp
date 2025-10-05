@@ -8,7 +8,7 @@ Install [`asdf-vm`](https://asdf-vm.com/guide/getting-started.html) and add this
 repo as a plugin:
 
 ```bash
-asdf plugin-add protonge https://github.com/augustobmoura/asdf-protonge.git
+asdf plugin add protonge https://github.com/augustobmoura/asdf-protonge.git
 ```
 
 Optional tools:
