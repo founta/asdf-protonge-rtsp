@@ -39,7 +39,7 @@ $ERROR: Version %s is already being managed by asdf but points to a different lo
 	fi
 
 	if [ -L "$asdf_install_path" ]; then
-		printf "$ERROR: Current managed version in asdf it's broken, please uninstall it then try again\n"
+		printf "$ERROR: Current managed version in asdf is broken, please uninstall it then try again\n"
 		return 4
 	fi
 
