@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-printf "Manage ProtonGE with asdf\n\n"
+printf "Manage ProtonGE-RTSP with asdf\n\n"

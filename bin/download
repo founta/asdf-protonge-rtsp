@@ -27,7 +27,7 @@ fetch_tag_info() {
 		extra_args+=(--header "Authorization: token $GITHUB_API_TOKEN")
 	fi
 
-	curl -sfL "${extra_args[@]}" https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/tags/"$tag"
+	curl -sfL "${extra_args[@]}" https://api.github.com/repos/SpookySkeletons/proton-ge-rtsp/releases/tags/"$tag"
 }
 
 get_download_urls() {

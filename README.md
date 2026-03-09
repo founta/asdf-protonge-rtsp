@@ -1,6 +1,6 @@
-# asdf-protonge [![Build](https://github.com/augustobmoura/asdf-protonge/actions/workflows/test.yml/badge.svg)](https://github.com/augustobmoura/asdf-protonge/actions/workflows/test.yml)
+# asdf-protonge-rtsp [![Build](https://github.com/founta/asdf-protonge-rtsp/actions/workflows/test.yml/badge.svg)](https://github.com/founta/asdf-protonge-rtsp/actions/workflows/test.yml)
 
-Unofficial [asdf](https://asdf-vm.com/) plugin for [GloriousEggroll custom Proton](https://github.com/GloriousEggroll/proton-ge-custom/) distribution.
+Unofficial [asdf](https://asdf-vm.com/) plugin for [GloriousEggroll RTSP custom Proton](https://github.com/SpookySkeletons/proton-ge-rtsp/) distribution. Identical to [asdf-protonge](https://github.com/augustobmoura/asdf-protonge/), except the links and commands have been swapped out to reference proton-ge-rtsp.
 
 ## Installation
 
@@ -8,7 +8,7 @@ Install [`asdf-vm`](https://asdf-vm.com/guide/getting-started.html) and add this
 repo as a plugin:
 
 ```bash
-asdf plugin add protonge https://github.com/augustobmoura/asdf-protonge.git
+asdf plugin add protonge-rtsp https://github.com/founta/asdf-protonge-rtsp.git
 ```
 
 Optional tools:
@@ -39,13 +39,13 @@ You can install any pre-compiled release from the Github release page.
 
 ```bash
 # Install latest version available
-asdf install protonge latest
+asdf install protonge-rtsp latest
 
 # Install latest version starting with prefix
-asdf install protonge latest:GE-Proton8
+asdf install protonge-rtsp latest:GE-Proton10
 
 # Install specific version
-asdf install protonge GE-Proton9-18
+asdf install protonge-rtsp GE-Proton10-26-rtsp20
 ```
 
 > [!NOTE]
@@ -53,7 +53,7 @@ asdf install protonge GE-Proton9-18
 > This will not work:
 >
 > ```bash
-> asdf install protonge ref:master
+> asdf install protonge-rtsp ref:master
 > ```
 
 ### Managing already installed versions
@@ -62,13 +62,13 @@ If you already have custom installations in your `compatibilitytools.d`
 directory you can start managing them with asdf-protonge by running:
 
 ```bash
-asdf cmd protonge manage $version
+asdf cmd protonge-rtsp manage $version
 ```
 
 An useful one-liner to manage all already installed versions is:
 
 ```bash
-ls ~/.steam/root/compatibilitytools.d | xargs asdf cmd protonge manage
+ls ~/.steam/root/compatibilitytools.d | xargs asdf cmd protonge-rtsp manage
 ```
 
 ## How it works
@@ -81,11 +81,11 @@ We are basically doing the instructions for manual installation:
 4. Symlink the extracted directory to the asdf directory
 
 We manage installed versions by symlinking the extracted directory to
-`$ASDF_DIR/installs/protonge/$version`, that way we can prevent double
+`$ASDF_DIR/installs/protonge-rtsp/$version`, that way we can prevent double
 installations and manage uninstallations with asdf.
 
 ```bash
-asdf uninstall protonge $version
+asdf uninstall protonge-rtsp $version
 ```
 
 ## TODO

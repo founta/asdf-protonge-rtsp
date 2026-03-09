@@ -15,7 +15,7 @@ get_releases_page() {
 		args+=(--header "Authorization: token $GITHUB_API_TOKEN")
 	fi
 
-	curl ${args+"${args[@]}"} -fL "https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases?per_page=100&page=$page"
+	curl ${args+"${args[@]}"} -fL "https://api.github.com/repos/SpookySkeletons/proton-ge-rtsp/releases?per_page=100&page=$page"
 }
 
 list_all() {
